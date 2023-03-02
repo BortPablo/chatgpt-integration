@@ -1,6 +1,7 @@
+import os
 import openai
 
-openai.api_key = '************************************'
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 while True:
     prompt = input("\nIntroducir pregunta ('exit' para salir): ")
